@@ -59,6 +59,7 @@ def setup_surface_file(args, surf_file, dir_file):
     f['dir_file'] = dir_file
 
     # Create the coordinates(resolutions) at which the function is evaluated
+    args.xnum = int(args.xnum)
     xcoordinates = np.linspace(args.xmin, args.xmax, num=args.xnum)
     f['xcoordinates'] = xcoordinates
 
