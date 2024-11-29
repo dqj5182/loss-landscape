@@ -12,6 +12,21 @@ The random direction(s) and loss surface values are stored in HDF5 (`.h5`) files
 
 ## Setup
 
+```
+# Install h5py
+pip install h5py==2.10.0
+pip install numpy==1.19.5
+pip install cython==0.29.21
+pip install --upgrade pip setuptools wheel
+conda install -c conda-forge h5py
+
+# Install PyTorch
+conda install pytorch==1.2.0 torchvision==0.4.0 cudatoolkit=10.0 -c pytorch
+pip install --upgrade torchvision
+
+
+```
+
 **Environment**: One or more multi-GPU node(s) with the following software/libraries installed:
 - [PyTorch 0.4](https://pytorch.org/)
 - [openmpi 3.1.2](https://www.open-mpi.org/)
